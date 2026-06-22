@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Welcome — Jaya Narayana</title>
+  <style>
+    :root{
+      --card-bg:#2b2f33;
+      --page-bg:#1f2224;
+      --muted:#bfc6cc;
+      --accent:#2b9af3;
+      --card-border:#3d4044;
+      --button-bg:#2b9af3;
+      --button-bg-2:#1f7fd3;
+    }
+    html,body{height:100%;margin:0;font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:linear-gradient(180deg,#151617 0%, #1b1d1f 100%); color:#e6eef6}
+    .wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:48px}
+    .card{width:100%;max-width:980px;background:var(--card-bg);border-radius:10px;padding:36px 44px;border:2px solid var(--card-border);box-shadow:0 8px 30px rgba(0,0,0,0.6)}
+    h1{font-size:28px;margin:0 0 8px 0}
+    .quote{color:var(--muted);font-size:13px;margin-bottom:28px}
+    .hero{display:flex;align-items:flex-start;gap:28px}
+    .rocket{width:160px;height:160px;flex:0 0 160px}
+    .section{flex:1}
+    .title{font-size:20px;margin:0 0 8px 0}
+    p{color:var(--muted);line-height:1.6}
+    .buttons{margin-top:18px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:6px;color:white;text-decoration:none;margin-right:10px;font-weight:600}
+    .btn-primary{background:linear-gradient(180deg,var(--button-bg),var(--button-bg-2));box-shadow:0 6px 12px rgba(43,154,243,0.18)}
+    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    footer{margin-top:26px;border-top:1px solid rgba(255,255,255,0.02);padding-top:16px;color:#9aa6b3;font-size:13px}
+
+    /* responsive */
+    @media (max-width:720px){
+      .hero{flex-direction:column;align-items:center;text-align:center}
+      .rocket{width:120px;height:120px}
+      .card{padding:24px}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Welcome to the webpage, Jaya Narayana!</h1>
+      <div class="quote">Here's a quote for you: "The only way to do great work is to love what you do." - Steve Jobs</div>
+
+      <div class="hero">
+        <div class="rocket" aria-hidden="true">
+          <!-- simple rocket SVG -->
+          <svg viewBox="0 0 512 512" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="g1" x1="0" x2="1">
+                <stop offset="0" stop-color="#ff5f6d"/>
+                <stop offset="1" stop-color="#ffc371"/>
+              </linearGradient>
+            </defs>
+            <g>
+              <path fill="#ff4f8b" d="M183 329c-28 22-49 48-49 48s28 7 54 4c28-3 47-19 63-34 20-19 14-50-12-61-25-11-60 11-56 43z" opacity=".95"/>
+              <path fill="url(#g1)" d="M370 96c-29-29-137 20-231 114S48 383 77 412c30 30 191-11 295-115 104-104 144-201 114-231z"/>
+              <circle cx="252" cy="188" r="36" fill="#fff" opacity=".9"/>
+              <path d="M160 360c-10 10-24 18-32 18-12 0-28-10-36-18 0 0 16-44 24-68 8-26 40-28 40-28s10 30 22 58c12 28 10 40 22 38 12-2 22-20 24-34 2-14 2-40 2-40s24 10 28 28c4 18-2 54-16 72-14 18-64 26-78 12z" fill="#e84e3f" opacity=".85"/>
+            </g>
+          </svg>
+        </div>
+
+        <div class="section">
+          <div class="title">Containerized Python API</div>
+          <p>This is a containerized application that exposes a JSON API using FastAPI and can be deployed to Azure or any cloud provider. Use the buttons below to make use of the interactive OpenAPI documentation for trying out the API dynamically, or browse the project source.</p>
+
+          <div class="buttons">
+            <a class="btn btn-primary" href="#">Try it out</a>
+            <a class="btn btn-outline" href="#">Project source</a>
+          </div>
+
+          <footer>Built with Python • Container-ready • OpenAPI (Swagger) available</footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
